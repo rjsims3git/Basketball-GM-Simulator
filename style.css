@@ -4,10 +4,11 @@ body {
   color: #222;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 40px auto;
   background: white;
   padding: 30px;
@@ -15,99 +16,113 @@ body {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
 
+/* HEADER */
 .top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .top-bar h1 {
-  margin: 0 0 8px 0;
+  margin: 0 0 6px 0;
+  font-size: 28px;
 }
 
 .top-bar p {
   margin: 0;
   color: #666;
-}
-
-.points-box {
-  background: #222;
-  color: white;
-  padding: 12px 16px;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-.prospect-list {
-  display: grid;
-  gap: 16px;
-}
-
-.prospect-card {
-  border: 1px solid #d9e0e6;
-  border-radius: 10px;
-  padding: 18px;
-  background: #fafbfc;
-}
-
-.prospect-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.prospect-name {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.prospect-meta {
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.grade-row {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-}
-
-.grade-badge {
-  background: #eef2f7;
-  padding: 8px 10px;
-  border-radius: 8px;
   font-size: 14px;
 }
 
-.traits {
-  margin-bottom: 12px;
-  color: #444;
-}
-
-.confidence {
-  margin-bottom: 14px;
+/* SCOUTING POINTS */
+.points-box {
+  background: #222;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
   font-weight: bold;
 }
 
+/* TABS */
+.tabs {
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  margin-right: 10px;
+  padding: 12px 16px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  background: #e4e7eb;
+  color: #222;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.tab-button:hover {
+  background: #d6dbe1;
+}
+
+/* ✅ ACTIVE TAB */
+.tab-button.active {
+  background: #222;
+  color: white;
+}
+
+/* BOARD */
+.board-row {
+  display: grid;
+  grid-template-columns: 60px 220px 70px 80px 170px 120px;
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.board-row:hover {
+  background: #f0f3f7;
+}
+
+/* DETAIL VIEW */
+#detailView {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#detailView h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#detailView p {
+  margin: 6px 0;
+}
+
+/* BUTTONS */
 button {
   background: #222;
   color: white;
   border: none;
-  padding: 10px 14px;
+  padding: 12px 16px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 14px;
-  margin-right: 8px;
+  font-size: 15px;
 }
 
 button:hover {
   opacity: 0.9;
 }
 
-button:disabled {
-  background: #999;
-  cursor: not-allowed;
+#detailView button {
+  margin-right: 8px;
+  margin-top: 10px;
+}
+
+/* GENERAL */
+h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
 }
