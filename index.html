@@ -11,10 +11,15 @@
     <header class="top-bar">
       <div>
         <h1>Basketball GM Simulator</h1>
-        <p>Draft Prep</p>
+        <p>Draft Prep + Draft Day Prototype</p>
       </div>
-      <div class="points-box">
-        Scouting: <span id="points">80</span>
+      <div class="header-right">
+        <div class="points-box">
+          Scouting: <span id="points">80</span>
+        </div>
+        <div class="pick-box">
+          Your Pick: <span id="userPickNumber">8</span>
+        </div>
       </div>
     </header>
 
@@ -22,11 +27,13 @@
       <button id="tab-overall" class="tab-button active" onclick="switchTab('overall')">Overall Board</button>
       <button id="tab-team" class="tab-button" onclick="switchTab('team')">Team Board</button>
       <button id="tab-detail" class="tab-button" onclick="switchTab('detail')">Prospect Detail</button>
+      <button id="tab-draft" class="tab-button" onclick="switchTab('draft')">Draft Day</button>
     </div>
 
     <div id="overallView"></div>
     <div id="teamView" style="display: none;"></div>
     <div id="detailView" style="display: none;"></div>
+    <div id="draftView" style="display: none;"></div>
   </div>
 
   <script src="script.js"></script>
