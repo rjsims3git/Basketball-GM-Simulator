@@ -7,35 +7,107 @@ body {
 }
 
 .container {
-  max-width: 800px;
-  margin: 60px auto;
+  max-width: 1000px;
+  margin: 40px auto;
   background: white;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  margin-top: 0;
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.top-bar h1 {
+  margin: 0 0 8px 0;
+}
+
+.top-bar p {
+  margin: 0;
+  color: #666;
+}
+
+.points-box {
+  background: #222;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.prospect-list {
+  display: grid;
+  gap: 16px;
+}
+
+.prospect-card {
+  border: 1px solid #d9e0e6;
+  border-radius: 10px;
+  padding: 18px;
+  background: #fafbfc;
+}
+
+.prospect-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.prospect-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.prospect-meta {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.grade-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.grade-badge {
+  background: #eef2f7;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.traits {
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.confidence {
+  margin-bottom: 14px;
+  font-weight: bold;
 }
 
 button {
   background: #222;
   color: white;
   border: none;
-  padding: 12px 18px;
+  padding: 10px 14px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
+  margin-right: 8px;
 }
 
 button:hover {
   opacity: 0.9;
 }
 
-.output {
-  margin-top: 20px;
-  padding: 15px;
-  background: #eef2f7;
-  border-radius: 8px;
+button:disabled {
+  background: #999;
+  cursor: not-allowed;
 }

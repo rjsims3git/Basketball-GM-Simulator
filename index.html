@@ -8,14 +8,20 @@
 </head>
 <body>
   <div class="container">
-    <h1>Basketball GM Simulator</h1>
-    <p>Your franchise starts here.</p>
+    <header class="top-bar">
+      <div>
+        <h1>Basketball GM Simulator</h1>
+        <p>Draft Prep Prototype</p>
+      </div>
+      <div class="points-box">
+        Scouting Points: <span id="scoutingPoints">25</span>
+      </div>
+    </header>
 
-    <button id="testButton">Start Prototype</button>
-
-    <div id="output" class="output">
-      Welcome, General Manager.
-    </div>
+    <section>
+      <h2>Prospects</h2>
+      <div id="prospectList" class="prospect-list"></div>
+    </section>
   </div>
 
   <script src="script.js"></script>
